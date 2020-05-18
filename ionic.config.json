@@ -1,7 +1,8 @@
 {
   "name": "mobdev-2019412",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular"
 }

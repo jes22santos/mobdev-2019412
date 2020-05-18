@@ -1,0 +1,17 @@
+<ion-header>
+
+	<ion-toolbar color="success">
+		<ion-title>Camera <ion-icon name="camera-outline"></ion-icon></ion-title>
+	</ion-toolbar>
+
+<ion-content class="areacam">
+
+   <img [src]="photo" slot="fixed" style="position:relative">
+ 
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed" style="position:relative">
+      <ion-fab-button (click)="takePicture()">
+        <ion-icon name="camera"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  
+</ion-content>
