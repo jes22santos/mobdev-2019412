@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-tabs>\n \n  <ion-tab-bar slot=\"bottom\">\n \n    <ion-tab-button tab=\"characters\">\n      <ion-icon name=\"people-outline\"></ion-icon>\n      <ion-label>Characters</ion-label>\n    </ion-tab-button>\n \n    <ion-tab-button tab=\"episodes\">\n      <ion-icon name=\"film-outline\"></ion-icon>\n      <ion-label>Episodes</ion-label>\n    </ion-tab-button>\n \n    <ion-tab-button tab=\"quotes\">\n      <ion-icon name=\"book-outline\"></ion-icon>\n      <ion-label>Quotes</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"deathCount\">\n      <ion-icon name=\"skull-outline\"></ion-icon>\n      <ion-label>Death Count</ion-label>\n    </ion-tab-button>\n \n  </ion-tab-bar>\n \n</ion-tabs>");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-tabs>\n \n  <ion-tab-bar slot=\"bottom\">\n \n    <ion-tab-button tab=\"characters\">\n      <ion-icon name=\"people-outline\"></ion-icon>\n      <ion-label>Characters</ion-label>\n    </ion-tab-button>\n \n    <ion-tab-button tab=\"episodes\">\n      <ion-icon name=\"film-outline\"></ion-icon>\n      <ion-label>Episodes</ion-label>\n    </ion-tab-button>\n \n    <ion-tab-button tab=\"quotes\">\n      <ion-icon name=\"book-outline\"></ion-icon>\n      <ion-label>Quotes</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"deathCount\">\n      <ion-icon name=\"skull-outline\"></ion-icon>\n      <ion-label>Death Count</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"camera\">\n      <ion-icon name=\"camera-outline\"></ion-icon>\n      <ion-label>Camera</ion-label>\n    </ion-tab-button>\n \n  </ion-tab-bar>\n \n</ion-tabs>");
 
 /***/ }),
 
@@ -81,6 +81,15 @@ const routes = [
                     {
                         path: '',
                         loadChildren: () => Promise.all(/*! import() | death-count-death-count-module */[__webpack_require__.e("common"), __webpack_require__.e("death-count-death-count-module")]).then(__webpack_require__.bind(null, /*! ../death-count/death-count.module */ "./src/app/pages/death-count/death-count.module.ts")).then(m => m.DeathCountPageModule)
+                    }
+                ]
+            },
+            {
+                path: 'camera',
+                children: [
+                    {
+                        path: '',
+                        loadChildren: () => __webpack_require__.e(/*! import() | camera-camera-module */ "camera-camera-module").then(__webpack_require__.bind(null, /*! ../camera/camera.module */ "./src/app/pages/camera/camera.module.ts")).then(m => m.CameraPageModule)
                     }
                 ]
             }

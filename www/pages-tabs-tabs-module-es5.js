@@ -21,7 +21,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-tabs>\n \n  <ion-tab-bar slot=\"bottom\">\n \n    <ion-tab-button tab=\"characters\">\n      <ion-icon name=\"people-outline\"></ion-icon>\n      <ion-label>Characters</ion-label>\n    </ion-tab-button>\n \n    <ion-tab-button tab=\"episodes\">\n      <ion-icon name=\"film-outline\"></ion-icon>\n      <ion-label>Episodes</ion-label>\n    </ion-tab-button>\n \n    <ion-tab-button tab=\"quotes\">\n      <ion-icon name=\"book-outline\"></ion-icon>\n      <ion-label>Quotes</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"deathCount\">\n      <ion-icon name=\"skull-outline\"></ion-icon>\n      <ion-label>Death Count</ion-label>\n    </ion-tab-button>\n \n  </ion-tab-bar>\n \n</ion-tabs>";
+    __webpack_exports__["default"] = "<ion-tabs>\n \n  <ion-tab-bar slot=\"bottom\">\n \n    <ion-tab-button tab=\"characters\">\n      <ion-icon name=\"people-outline\"></ion-icon>\n      <ion-label>Characters</ion-label>\n    </ion-tab-button>\n \n    <ion-tab-button tab=\"episodes\">\n      <ion-icon name=\"film-outline\"></ion-icon>\n      <ion-label>Episodes</ion-label>\n    </ion-tab-button>\n \n    <ion-tab-button tab=\"quotes\">\n      <ion-icon name=\"book-outline\"></ion-icon>\n      <ion-label>Quotes</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"deathCount\">\n      <ion-icon name=\"skull-outline\"></ion-icon>\n      <ion-label>Death Count</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"camera\">\n      <ion-icon name=\"camera-outline\"></ion-icon>\n      <ion-label>Camera</ion-label>\n    </ion-tab-button>\n \n  </ion-tab-bar>\n \n</ion-tabs>";
     /***/
   },
 
@@ -158,6 +158,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             /*! ../death-count/death-count.module */
             "./src/app/pages/death-count/death-count.module.ts")).then(function (m) {
               return m.DeathCountPageModule;
+            });
+          }
+        }]
+      }, {
+        path: 'camera',
+        children: [{
+          path: '',
+          loadChildren: function loadChildren() {
+            return __webpack_require__.e(
+            /*! import() | camera-camera-module */
+            "camera-camera-module").then(__webpack_require__.bind(null,
+            /*! ../camera/camera.module */
+            "./src/app/pages/camera/camera.module.ts")).then(function (m) {
+              return m.CameraPageModule;
             });
           }
         }]
